@@ -7,9 +7,9 @@ const onProgress = (event) => {
     progressBar.classList.add("hide");
   } else {
     progressBar.classList.remove("hide");
-    if (event.detail.totalProgress === 0) {
-      event.target.querySelector(".center-pre-prompt").classList.add("hide");
-    }
+    // if (event.detail.totalProgress === 0) {
+    //   event.target.querySelector(".center-pre-prompt").classList.add("hide");
+    // }
   }
 };
 document.querySelector("model-viewer").addEventListener("progress", onProgress);
@@ -39,6 +39,10 @@ var current_element;
 function visibilityToggle(val) {
   last_element.style.display = "none";
   current_element = document.getElementById("location" + val.split("-")[1]);
-  current_element.style.display = "block";
+  if (last_element == current_element) {
+    current_element.style.display = "none";
+  } else {
+    current_element.style.display = "block";
+  }
   last_element = current_element;
 }
