@@ -31,7 +31,7 @@ function openModal() {
   modal.style.display = "block";
 }
 
-var last_element = document.getElementById("location1");
+var last_element = document.getElementById("location2");
 var current_element;
 
 function visibilityToggle(val) {
