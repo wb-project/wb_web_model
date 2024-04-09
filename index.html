@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wheelbarrow</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Visual representation of wheelbarrow." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" href="./styles.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="background_color" content="#ffffff" />
+  </head>
+  <body onload="openModal()">
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p style="text-align: center">
+          Wheelbarrow visual model. Find all devices connected to the machine. <br />
+          &quot;View in AR&quot; to see a magic trick!
+        </p>
+      </div>
+    </div>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer
+      src="model.glb"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      tone-mapping="commerce"
+      poster="poster.webp"
+      shadow-intensity="1"
+      environment-image="aircraft_workshop_01_1k.hdr"
+      camera-orbit="2253deg 74.6deg 4.146m"
+      field-of-view="30deg"
+      auto-rotate
+    >
+      <button
+        class="Hotspot"
+        slot="hotspot-2"
+        data-position="0.021621755875688375m 1.2297586305629888m 0.08533508571566895m"
+        data-normal="0.9909913828770266m 0.13392564751933544m 7.256993035749856e-8m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">PLC → ifm CR711s</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-4"
+        data-position="0.18987147011450833m 1.0343327306804184m 0.011433683006832007m"
+        data-normal="0.9659258592590289m 0.25881892205684615m 1.9728071959050464e-7m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">HMI → ifm CR1203</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-6"
+        data-position="0.04251253061851213m 0.555097952918244m -0.2149776601916715m"
+        data-normal="-0.9396926111522228m -3.9779854478002363e-7m 0.3420201697937704m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Camera head (front) → ifm O3R225</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-7"
+        data-position="-1.2706659134944593m 0.26459622375664144m -0.11084899339790519m"
+        data-normal="-0.20006271602112005m 0.9797830931681907m -1.5914743645845109e-7m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Camera back → Intel Realsense</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-8"
+        data-position="-0.4038617677692875m 0.8987001727006669m 0.028729800285174467m"
+        data-normal="0.17296534908694547m -0.0008900895072991289m 0.9849275078684218m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Encoder → ifm Encoder</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-9"
+        data-position="0.0025479197502132345m 1.2019441473051415m -0.13139869766999193m"
+        data-normal="1m 0m 0m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">IO Controller → ifm CR2042</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-10"
+        data-position="-0.12985039330257342m 1.0949338419825634m -0.02326454217374331m"
+        data-normal="-0.999999999999992m 1.694523218161177e-14m -1.273619918418234e-7m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Mini PC → Intel NUC</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-11"
+        data-position="-0.36179141747450405m 0.9377031380580956m -0.025109106310762356m"
+        data-normal="-0.9659277492718131m 0.2588118683265256m -1.5071865476501414e-7m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Camera VPU → ifm OVP800</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-12"
+        data-position="-0.026717283371008357m 1.3739021024699587m 0.30689001744879585m"
+        data-normal="0.7070011215433702m 0.017386893387579823m 0.7069986634179345m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Status light → DV1330</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-13"
+        data-position="-0.27012174039444437m 0.8789235170159362m -0.009552090243838851m"
+        data-normal="0.9993907202040426m -0.03490255082754791m -0.000017770073522327398m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">IMU → ifm JD2110</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-15"
+        data-position="-0.440729616472682m 0.6976391911725975m -0.3413463309407239m"
+        data-normal="0m 0m -1m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Emergency Stop (left)</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-16"
+        data-position="-0.4284857866866902m 0.70121630857818m 0.34237634390592586m"
+        data-normal="5.551115123125784e-17m 0m 1m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Emergency Stop (right)</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-19"
+        data-position="-0.017004461832269224m 0.7482224056197215m 0.07619356259999321m"
+        data-normal="0.8778959278598394m 0.4788514799466396m -1.575900260841756e-7m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Emergency Stop (front)</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-20"
+        data-position="-0.023258841543211783m 0.7596887808825273m -0.07788332702383063m"
+        data-normal="0.8778952226393678m 0.4788527728508783m 0m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Charging Port</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-21"
+        data-position="-0.015294721674869796m 0.7450878501712936m -0.005870065645761091m"
+        data-normal="0.8778959464405707m 0.47885144588192957m -8.251244798529456e-9m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Key switch selector</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-22"
+        data-position="-1.285227732892522m 0.3323695315342166m -0.001766426453103348m"
+        data-normal="-0.9238860437666812m 5.787483235318284e-7m -0.3826677124253041m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Limit sensor → ifm 7105</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-23"
+        data-position="-0.9142354998653008m 0.20913972133523961m 0.20433562998260865m"
+        data-normal="-0.0000012860619191257252m -8.033640154755635e-7m 0.9999999999988505m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Encoder → ifm Encoder</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-24"
+        data-position="-0.35631581304605253m 0.2772856282082363m -0.20598562394968867m"
+        data-normal="-3.757473408527722e-7m 0.0000012617683972520228m -0.9999999999991334m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Encoder → ifm Encoder</div></button
+      ><button
+        class="Hotspot"
+        slot="hotspot-25"
+        data-position="0.012647821746639414m 1.2552809479240157m -0.34246000068648486m"
+        data-normal="0.9999999999999774m 0m 2.1287647206102983e-7m"
+        data-visibility-attribute="visible"
+      >
+        <div class="HotspotAnnotation">Crane controller joystick receiver</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">View in your space</button>
+      <div id="ar-prompt">
+        <img src="ar_hand_prompt.png" />
+      </div>
+    </model-viewer>
+    <div class="footer">
+      <p>¯\_(ツ)_/¯ ⁞ Sameer Tuteja © ⁞ 2024 <br /></p>
+    </div>
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+    ></script>
+  </body>
+</html>
