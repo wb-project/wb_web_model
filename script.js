@@ -30,3 +30,13 @@ window.onclick = function (event) {
 function openModal() {
   modal.style.display = "block";
 }
+
+var last_element = document.getElementById("location1");
+var current_element;
+
+function visibilityToggle(val) {
+  last_element.style.display = "none";
+  current_element = document.getElementById("location" + val.split("-")[1]);
+  current_element.style.display = "block";
+  last_element = current_element;
+}
